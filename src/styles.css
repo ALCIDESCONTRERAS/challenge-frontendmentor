@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: Be_Vietnam_Pro;
+    font-style: normal;
+    font-weight: 400 500 700;
+    font-display: swap;
+    src: url("/assets/fonts/Be_Vietnam_Pro/") format("woff2");
+  }
+
+@theme {
+  --color-BrightRed: hsl(12, 88%, 59%);
+  --color-DarkBlue: hsl(228, 39%, 23%);
+  --color-DarkGrayishBlue: hsl(227, 12%, 61%);
+  --color-VeryDarkBlue: hsl(233, 12%, 13%);
+  --color-VeryPaleRed: hsl(13, 100%, 96%);
+  --color-VeryLightGray: hsl(0, 0%, 98%);
+
+  --font-vietnam_pro: Be_Vietnam_Pro;
+}
+
+@layer components{
+  .wrapper{
+    @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+  }
+
+  .button{
+    @apply bg-BrightRed text-VeryLightGray block w-max py-4 px-12 rounded-full;
+  }
+
+  .footer-area{
+    grid-template-areas:
+    "form"
+    "navigation"
+    "social-media"
+    "logo"
+    "copy";
+  }
+
+.footer-area-md{
+    grid-template-areas:
+    "logo           navigation  form"
+    "social-media   navigation  copy"
+    ;
+  }
+}
