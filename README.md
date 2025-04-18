@@ -4,7 +4,7 @@
 
 ## 📋 Descripción
 
-Este es un desafío de [Frontend Mentor](https://www.frontendmentor.io), en el que se replica una **landing page responsiva** basada en un diseño provisto. El objetivo es desarrollar habilidades con HTML, CSS y JavaScript creando interfaces realistas.
+Este es un desafío de [Frontend Mentor](https://www.frontendmentor.io), en el que se replica una **landing page responsiva** basada en un diseño provisto. El objetivo es desarrollar habilidades con HTML, CSS y Tailwind creando interfaces realistas.
 
 ## 🚀 Funcionalidades
 
