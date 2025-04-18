@@ -28,7 +28,7 @@
          peer-checked:bg-[url(/assets/images/icon-close.svg)] transition-all z-50 md:hidden"></label>
 
         <div class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full
-         peer-checked:translate-x-0 transition-transform md:static md:translate-0 md:bg-none">
+         peer-checked:translate-x-0 transition-transform z-40 md:static md:translate-0 md:bg-none">
           <ul class="absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max
            text-center grid gap-6 font-bold text-DarkBlue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static">
             <li>
@@ -63,7 +63,21 @@
       </section>
     </header>
 
-    <main>
+    <figure class="absolute inset-0 overflow-hidden pointer-events-none">
+      <img 
+      class="absolute w-full -z-10 -top-24 -right-20 max-w-2xl"
+      src="/assets/images/bg-tablet-pattern.svg"
+      alt="">
+    </figure>
+
+    <figure class="absolute inset-0 overflow-hidden pointer-events-none">
+      <img 
+      class="absolute w-full bottom-0 -right-56 -z-10 max-w-2xl md:hidden"
+      src="/assets/images/bg-tablet-pattern.svg"
+      alt="">
+    </figure>
+
+    <main class="relative">
       <section class="wrapper text-center py-24 grid gap-12 md:grid-cols-2 md:text-left">
         <article>
           <h2 class="text-3xl font-bold text-VeryDarkBlue mb-6 md:text-4xl">What´s different about Manage?</h2>
@@ -103,7 +117,6 @@
             <p class="text-DarkGrayishBlue">"Whe have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
           </article>
         </div>
-
         <a href="#" class="button mx-auto shadow-xl shadow-BrightRed/30">Get Started</a>
       </section>
 
@@ -113,6 +126,13 @@
           <a class="button text-BrightRed bg-VeryLightGray mx-auto md:mx-0 md:justify-self-end" href="#">Get Started</a>
         </div>
       </section>
+
+      <figure class="absolute inset-0 pointer-events-none">
+        <img 
+        class="absolute md:w-full md:top-80 md:-left-96 md:block -z-10 max-w-2xl hidden"
+        src="/assets/images/bg-tablet-pattern.svg"
+        alt="">
+      </figure>
     </main>
 
     <footer class="bg-VeryDarkBlue py-24">
